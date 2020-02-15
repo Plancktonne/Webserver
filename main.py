@@ -24,7 +24,7 @@ def main():
    templateData = {
       'pins' : pins
       }
-   print("Field of huimid ")
+   message = "Turned "
    # Pass the template data into the template main.html and return it to the user
    return render_template('main.html', **templateData)
 
@@ -58,4 +58,4 @@ def action(changePin, action):
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
-   print("Field of Temperatures: ")
+   message = "Tsad "
