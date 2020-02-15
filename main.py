@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 # Create a dictionary called pins to store the pin number, name, and pin state:
 pins = {
-   16 : {'name' : 'GPIO 23', 'state' : GPIO.LOW},
+   16 : {'name' : 'GPIO 16', 'state' : GPIO.LOW},
    #24 : {'name' : 'GPIO 24', 'state' : GPIO.LOW}
    }
 
@@ -24,6 +24,7 @@ def main():
    templateData = {
       'pins' : pins
       }
+   print("Field of huimid ")
    # Pass the template data into the template main.html and return it to the user
    return render_template('main.html', **templateData)
 
@@ -57,3 +58,4 @@ def action(changePin, action):
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=80, debug=True)
+   print("Field of Temperatures: ")
